@@ -35,7 +35,8 @@
         "cleandoc": "rm -rf docs/",
         "doc": "npm run cleandoc && typedoc lib/",
         "release": "release-it",
-        "before-stage": "npx auto-changelog"
+        "before-stage": "npx auto-changelog",
+        "trial": "ts-node examples/test.ts"
     },
     "keywords": [
         "logo",

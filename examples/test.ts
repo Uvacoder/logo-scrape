@@ -1,8 +1,8 @@
-import { LogoScrape } from 'logo-scrape';
+import { LogoScrape } from '../lib/LogoScrape';
 
 (async () => {
-    const url = 'http://producthunt.com';
-    const logo = await LogoScrape.getLogo(url);
+    const url = 'https://www.apple.com'
+    // const logo = await LogoScrape.getLogo(url);
     const logos = await LogoScrape.getLogos(url);
-    console.log({logo, logos});
+    console.log({ logos });
 })();
